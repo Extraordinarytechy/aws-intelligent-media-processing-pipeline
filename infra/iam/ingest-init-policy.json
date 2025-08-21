@@ -1,0 +1,28 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3MultipartAndPutObject",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateMultipartUpload",
+        "s3:AbortMultipartUpload",
+        "s3:CompleteMultipartUpload",
+        "s3:ListMultipartUploadParts",
+        "s3:PutObject"
+      ],
+      "Resource": "arn:aws:s3:::"place ur arn"/*"
+    },
+    {
+      "Sid": "Logs",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+

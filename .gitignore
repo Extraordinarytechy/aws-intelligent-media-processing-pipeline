@@ -1,0 +1,31 @@
+# Node / build
+node_modules/
+primevod-frontend/node_modules/
+dist/
+dist/*.zip
+
+# Local tmp & outputs
+tmp/
+out.json
+*.log
+
+# OS artifacts
+*.Zone.Identifier
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Keys & secrets (local only)
+infra/cloudfront/private_key.pem
+*.pem
+*.key
+
+# Lambda zips (generated)
+dist/*.zip
+observability/canary-hls.zip
+
+# Other build outputs
+primevod-frontend/build/

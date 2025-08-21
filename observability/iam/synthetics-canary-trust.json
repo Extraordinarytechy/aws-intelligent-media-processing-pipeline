@@ -1,0 +1,11 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"TrustSynthetics",
+      "Effect":"Allow",
+      "Principal":{"Service":"synthetics.amazonaws.com"},
+      "Action":"sts:AssumeRole"
+    }
+  ]
+}
